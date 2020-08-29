@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/array10.csx.
+
+CSX program parsed correctly.
+Error (line 3): a must have more than 0 elements.
+Error count = 1
+
+CSX compilation halted due to type errors.

@@ -1,0 +1,10 @@
+
+
+Begin CSX compilation of tests/relation9.csx.
+
+CSX program parsed correctly.
+Error (line 4): Left operand of <= must be a scalar.
+Error (line 4): Operands of <= must both be arithmetic or both must be boolean.
+Error count = 2
+
+CSX compilation halted due to type errors.

@@ -1,0 +1,10 @@
+
+
+Begin CSX compilation of tests/scope7.csx.
+
+CSX program parsed correctly.
+Error (line 3): a is not declared.
+Error (line 3): Return type of f is Integer
+Error count = 2
+
+CSX compilation halted due to type errors.

@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/blank2.csx:
+1:2 	identifier(iskxkj)
+End test of CSX scanner.

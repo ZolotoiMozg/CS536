@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/array7.csx.
+
+CSX program parsed correctly.
+Error (line 4): The subscript must be a scalar. 
+Error count = 1
+
+CSX compilation halted due to type errors.

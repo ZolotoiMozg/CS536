@@ -1,0 +1,4 @@
+Begin test of CSX scanner. Scanning file tests/string6.csx:
+1:1 	string literal("")
+Illegal token (") ignored.
+End test of CSX scanner.

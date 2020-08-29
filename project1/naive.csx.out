@@ -1,0 +1,12 @@
+CSX program parsed correctly.
+Here is its unparsing:
+1:	 {
+1:	   int x;
+2:	   x = 0;
+3:	   x = (x + 1);
+1:	 } EOF
+
+
+Here is an analysis of identifier declarations and uses for tests/naive.csx:
+1:	x(int): 2,3(2)
+

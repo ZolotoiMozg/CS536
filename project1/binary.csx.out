@@ -1,0 +1,25 @@
+CSX program parsed correctly.
+Here is its unparsing:
+1:	 {
+2:	   int x;
+3:	   int y;
+4:	   bool u;
+5:	   bool v;
+6:	   x = 10;
+7:	   y = 20;
+8:	   x = (10 + x);
+9:	   y = (x - 29898);
+10:	   x = ((x - y) - (y - ((x + y) - ((y - x) + (x - y)))));
+11:	   u = (x == y);
+12:	   v = (10 != x);
+13:	   v = (x != ((1 - y) + x));
+14:	   v = (v == (u != ((78973 - y) == x)));
+1:	 } EOF
+
+
+Here is an analysis of identifier declarations and uses for tests/binary.csx:
+2:	x(int): 6,8(2),9,10(5),11,12,13(2),14
+3:	y(int): 7,9,10(5),11,13,14
+4:	u(bool): 11,14
+5:	v(bool): 12,13,14(2)
+

@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/case2.csx:
+1:1 	BOOL
+End test of CSX scanner.

@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/string3.csx:
+1:1 	string literal(" ,./:;<>`?'~!@#$%^&*()[]{}|_+=-abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
+End test of CSX scanner.

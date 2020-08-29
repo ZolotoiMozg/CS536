@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/scope9.csx.
+
+CSX program parsed correctly.
+Error (line 6): b is not declared.
+Error count = 1
+
+CSX compilation halted due to type errors.

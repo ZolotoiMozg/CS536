@@ -1,0 +1,5 @@
+Begin test of CSX scanner. Scanning file tests/string18.csx:
+Illegal token (") ignored.
+Illegal token () ignored.
+Illegal token (") ignored.
+End test of CSX scanner.

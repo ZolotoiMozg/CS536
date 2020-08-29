@@ -1,0 +1,4 @@
+Begin test of CSX scanner. Scanning file tests/char7.csx:
+1:1 	character literal(")
+1:4 	string literal("'")
+End test of CSX scanner.

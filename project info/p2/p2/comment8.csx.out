@@ -1,0 +1,4 @@
+Begin test of CSX scanner. Scanning file tests/comment8.csx:
+1:1 	string literal("alij")
+2:4 	string literal("bb")
+End test of CSX scanner.

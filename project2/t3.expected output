@@ -1,0 +1,337 @@
+Begin test of CSX scanner. Scanning file ../../tests/t3.csx:
+7:1 	CONST
+7:7 	INT
+7:11 	identifier(SIZE)
+7:16 	=
+7:18 	integer literal(100)
+7:21 	;
+9:1 	CLASS
+9:7 	identifier(ExhaustiveTest)
+9:21 	{
+10:2 	INT
+10:6 	identifier(value)
+10:11 	;
+11:2 	CHAR
+11:7 	identifier(signal)
+11:13 	;
+12:2 	CHAR
+12:7 	identifier(name)
+12:11 	[
+12:12 	identifier(SIZE)
+12:16 	]
+12:17 	;
+13:2 	BOOL
+13:7 	identifier(status)
+13:13 	;
+15:2 	identifier(ExhaustiveTest)
+15:16 	(
+15:17 	)
+16:2 	{
+17:3 	INT
+17:7 	identifier(i)
+17:8 	=
+17:9 	integer literal(0)
+17:10 	;
+18:3 	INT
+18:7 	identifier(negVal)
+18:14 	=
+18:41 	integer literal(-654)
+18:45 	;
+19:3 	INT
+19:7 	identifier(posVal)
+19:14 	=
+19:30 	integer literal(4234)
+19:34 	;
+20:3 	INT
+20:7 	identifier(hugePosVal)
+20:18 	=
+Error: Integer literal 123123123123123123123123123123123123123123123 too large; replaced with 2147483647
+20:20 	integer literal(2147483647)
+20:65 	;
+21:3 	INT
+21:7 	identifier(hugeNegVal)
+21:18 	=
+Error: Integer literal ~12312312315412412315124151231251561231512511 too small; replaced with -2147483648
+21:20 	integer literal(-2147483648)
+21:65 	;
+23:3 	WHILE
+23:8 	(
+23:9 	identifier(i)
+23:10 	!=
+23:12 	identifier(SIZE)
+23:16 	)
+24:3 	{
+25:4 	IF
+25:6 	(
+25:7 	identifier(i)
+25:8 	==
+25:10 	integer literal(20)
+25:12 	)
+25:13 	;
+26:5 	PRINT
+26:10 	(
+26:11 	string literal("\ti = %d\n")
+26:23 	,
+26:24 	integer literal(20)
+26:26 	)
+26:27 	;
+27:4 	ELSE
+27:9 	IF
+27:11 	(
+27:12 	identifier(i)
+27:13 	>
+27:14 	integer literal(20)
+27:16 	)
+28:5 	PRINT
+28:10 	(
+28:11 	string literal("\ti > 20\n")
+28:23 	)
+28:24 	;
+29:4 	ELSE
+29:9 	IF
+29:11 	(
+29:12 	identifier(i)
+29:13 	<
+29:14 	integer literal(20)
+29:16 	)
+30:5 	PRINT
+30:10 	(
+30:11 	string literal("\ti<20\n")
+30:21 	)
+30:22 	;
+31:4 	ELSE
+31:9 	IF
+31:11 	(
+31:12 	identifier(i)
+31:13 	>=
+31:15 	integer literal(20)
+31:17 	)
+32:5 	PRINT
+32:10 	(
+32:11 	string literal("\ti>=20\n")
+32:22 	)
+32:23 	;
+33:4 	ELSE
+33:9 	IF
+33:11 	(
+33:12 	identifier(i)
+33:13 	<=
+33:15 	integer literal(20)
+33:17 	)
+34:5 	PRINT
+34:10 	(
+34:11 	string literal("\ti<=20\n")
+34:22 	)
+34:23 	;
+35:4 	ELSE
+36:5 	PRINT
+36:10 	(
+36:11 	string literal("\ti!=20\n")
+36:22 	)
+36:23 	;
+38:4 	identifier(signal)
+38:11 	=
+38:13 	character literal(\n)
+38:17 	;
+39:4 	identifier(signal)
+39:11 	=
+39:13 	character literal(\t)
+39:17 	;
+40:4 	identifier(signal)
+40:11 	=
+40:13 	character literal(')
+40:17 	;
+41:4 	identifier(signal)
+41:11 	=
+41:13 	character literal(\)
+41:17 	;
+42:4 	identifier(signal)
+42:11 	=
+42:13 	character literal(a)
+42:16 	;
+43:4 	identifier(signal)
+43:11 	=
+Illegal token (') ignored.
+43:13 	identifier(aa)
+Illegal token (') ignored.
+43:15 	;
+44:4 	identifier(status)
+44:11 	=
+44:13 	FALSE
+44:18 	;
+45:4 	IF
+45:6 	(
+45:7 	identifier(i)
+45:8 	==
+45:10 	integer literal(50)
+45:12 	)
+46:5 	CONTINUE
+46:13 	;
+47:4 	IF
+47:6 	(
+47:7 	identifier(i)
+47:8 	==
+47:10 	integer literal(90)
+47:12 	)
+48:5 	BREAK
+48:10 	;
+50:4 	identifier(j)
+50:6 	=
+50:8 	READ
+50:12 	(
+50:13 	identifier(name)
+50:17 	[
+50:18 	identifier(i)
+50:19 	]
+50:20 	)
+50:21 	;
+51:4 	IF
+51:6 	(
+51:7 	identifier(j)
+51:8 	!=
+51:10 	integer literal(0)
+51:11 	)
+52:5 	PRINT
+52:10 	(
+52:11 	string literal("Read Error")
+52:23 	)
+52:24 	;
+54:4 	IF
+54:6 	(
+54:7 	identifier(j)
+54:8 	==
+54:10 	integer literal(2)
+54:11 	||
+54:13 	identifier(i)
+54:14 	==
+54:16 	integer literal(4)
+54:17 	)
+55:5 	identifier(a)
+55:7 	=
+55:9 	integer literal(1)
+55:10 	:
+55:11 	integer literal(4)
+55:12 	;
+57:4 	identifier(i)
+57:5 	=
+57:6 	identifier(i)
+57:7 	+
+57:8 	integer literal(1)
+57:9 	;
+58:4 	identifier(j)
+58:5 	=
+58:6 	identifier(j)
+58:7 	-
+58:8 	integer literal(1)
+58:9 	;
+59:4 	identifier(i)
+59:5 	++
+59:7 	;
+60:4 	identifier(j)
+60:5 	--
+60:7 	;
+61:4 	INT
+61:8 	identifier(f)
+61:10 	=
+61:12 	identifier(i)
+61:13 	*
+61:14 	identifier(j)
+61:15 	;
+62:4 	INT
+62:8 	identifier(g)
+62:10 	=
+62:12 	identifier(i)
+62:13 	/
+62:14 	identifier(j)
+62:15 	;
+64:4 	IF
+64:6 	(
+64:7 	identifier(f)
+64:8 	==
+64:10 	integer literal(0)
+64:11 	&&
+64:13 	identifier(g)
+64:14 	==
+64:16 	integer literal(1)
+64:17 	)
+65:5 	INT
+65:9 	identifier(c)
+65:11 	=
+65:13 	integer literal(1)
+65:14 	;
+67:4 	identifier(name)
+67:9 	=
+67:11 	string literal("A             i\n")
+67:30 	;
+68:4 	PRINT
+68:9 	(
+68:10 	identifier(name)
+68:14 	)
+68:15 	;
+70:4 	identifier(name)
+70:9 	=
+Illegal token (") ignored.
+70:11 	identifier(A)
+Illegal token (") ignored.
+71:4 	;
+Illegal token (\) ignored.
+Illegal token (@) ignored.
+Illegal token (#) ignored.
+Illegal token (%) ignored.
+Illegal token (^) ignored.
+Illegal token (&) ignored.
+Illegal token (?) ignored.
+Illegal token (|) ignored.
+89:3 	}
+90:3 	identifier(status)
+90:10 	=
+90:12 	TRUE
+90:16 	;
+92:2 	}
+93:2 	CONST
+93:8 	INT
+93:12 	identifier(GetValue)
+93:20 	(
+93:21 	)
+94:2 	{
+95:3 	RETURN
+95:10 	identifier(value)
+95:15 	;
+96:2 	}
+97:2 	VOID
+97:7 	identifier(SetValue)
+97:15 	(
+97:16 	INT
+97:20 	identifier(val)
+97:23 	)
+98:2 	{
+99:3 	IF
+99:5 	(
+99:6 	identifier(val)
+99:9 	>
+99:10 	identifier(SIZE)
+99:14 	)
+99:15 	;
+100:4 	identifier(value)
+100:10 	=
+100:12 	identifier(SIZE)
+100:16 	;
+101:3 	ELSE
+101:8 	IF
+101:10 	(
+101:11 	identifier(val)
+101:14 	<
+101:15 	integer literal(0)
+101:16 	)
+102:4 	identifier(value)
+102:10 	=
+102:12 	integer literal(0)
+102:13 	;
+103:3 	ELSE
+104:4 	identifier(value)
+104:10 	=
+104:12 	identifier(val)
+104:15 	;
+105:2 	}
+106:1 	}
+End test of CSX scanner.

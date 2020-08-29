@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/while12.csx.
+
+CSX program parsed correctly.
+Error (line 3): main isn't a label.
+Error count = 1
+
+CSX compilation halted due to type errors.

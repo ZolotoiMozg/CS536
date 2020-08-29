@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/keyword8.csx:
+1:1 	FALSE
+End test of CSX scanner.

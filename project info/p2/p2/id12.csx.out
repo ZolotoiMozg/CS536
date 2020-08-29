@@ -1,0 +1,5 @@
+Begin test of CSX scanner. Scanning file tests/id12.csx:
+1:1 	identifier(elj)
+Illegal token (_) ignored.
+1:4 	integer literal(123)
+End test of CSX scanner.

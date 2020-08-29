@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/method2.csx.
+
+CSX program parsed correctly.
+Error (line 4): f is called as a procedure and must therefore return void.
+Error count = 1
+
+CSX compilation halted due to type errors.

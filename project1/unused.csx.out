@@ -1,0 +1,12 @@
+CSX program parsed correctly.
+Here is its unparsing:
+1:	 {
+2:	   int a;
+3:	   bool b;
+1:	 } EOF
+
+
+Here is an analysis of identifier declarations and uses for tests/unused.csx:
+2:	a(int)
+3:	b(bool)
+

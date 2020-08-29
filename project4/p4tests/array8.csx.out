@@ -1,0 +1,10 @@
+
+
+Begin CSX compilation of tests/array8.csx.
+
+CSX program parsed correctly.
+Error (line 4): Array subscripts must be integer or character expressions.
+Error (line 4): The subscript must be a scalar. 
+Error count = 2
+
+CSX compilation halted due to type errors.

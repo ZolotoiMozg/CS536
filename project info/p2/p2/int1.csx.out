@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/int1.csx:
+1:1 	integer literal(271)
+End test of CSX scanner.

@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/while7.csx.
+
+CSX program parsed correctly.
+Error (line 6): label doesn't label an enclosing while loop.
+Error count = 1
+
+CSX compilation halted due to type errors.

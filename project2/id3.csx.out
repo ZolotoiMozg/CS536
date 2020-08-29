@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/id3.csx:
+1:1 	identifier(QELKCNKN)
+End test of CSX scanner.

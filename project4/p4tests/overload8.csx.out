@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/overload8.csx.
+
+CSX program parsed correctly.
+Error (line 4): Illegal overloaded method definition (this parameter combination already used).
+Error count = 1
+
+CSX compilation halted due to type errors.

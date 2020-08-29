@@ -1,0 +1,4 @@
+Begin test of CSX scanner. Scanning file tests/int8.csx:
+1:1 	integer literal(-872)
+1:5 	integer literal(-2878)
+End test of CSX scanner.

@@ -1,0 +1,22 @@
+CSX program parsed correctly.
+Here is its unparsing:
+1:	 {
+2:	   if ((a != 0))
+2:	      {
+3:	         int a;
+4:	         a = 10;
+5:	         a = (a - 5);
+6:	         if ((a != 0))
+6:	            {
+7:	               a = (298 + a);
+6:	            }
+2:	      }
+1:	 } EOF
+
+
+Here is an analysis of identifier declarations and uses for tests/extra_undeclared_block.csx:
+3:	a(int): 4,5(2),6,7(2)
+
+Undeclared Identifiers:
+	a(undeclared): 2
+

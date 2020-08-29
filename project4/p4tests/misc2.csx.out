@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/misc2.csx.
+
+CSX program parsed correctly.
+Error (line 2): The last method in a class must be declared as void main() {...
+Error count = 1
+
+CSX compilation halted due to type errors.

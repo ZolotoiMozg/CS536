@@ -1,0 +1,25 @@
+The following is the expected output from running
+  ant test in this folder.
+=================================================
+
+checkJLexNeeded:
+
+JLex:
+
+compile:
+
+test:
+     [java] Begin test of CSX scanner. Scanning file tiny.csx:
+     [java] 1:1 	integer literal(123)
+     [java] 1:5 	!=
+     [java] 1:8 	integer literal(120)
+     [java] 1:11 	+
+     [java] 1:12 	integer literal(3)
+     [java] 2:1 	+
+     [java] 2:2 	integer literal(12345)
+     [java] 2:8 	+
+     [java] 2:10 	integer literal(17)
+     [java] End test of CSX scanner.
+
+BUILD SUCCESSFUL
+Total time: 1 second

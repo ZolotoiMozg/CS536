@@ -1,0 +1,6 @@
+Begin test of CSX scanner. Scanning file tests/char20.csx:
+Illegal token (') ignored.
+Illegal token (\) ignored.
+1:1 	integer literal(33)
+Illegal token (') ignored.
+End test of CSX scanner.

@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/assign16.csx.
+
+CSX program parsed correctly.
+Error (line 4): Right hand side of an assignment is not assignable to left hand side.
+Error count = 1
+
+CSX compilation halted due to type errors.

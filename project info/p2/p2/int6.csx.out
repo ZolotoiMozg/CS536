@@ -1,0 +1,4 @@
+Begin test of CSX scanner. Scanning file tests/int6.csx:
+Illegal token (~) ignored.
+1:1 	integer literal(-2873)
+End test of CSX scanner.

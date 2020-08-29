@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/assign4.csx.
+
+CSX program parsed correctly.
+Error (line 7): The initializer must be of type Integer
+Error count = 1
+
+CSX compilation halted due to type errors.

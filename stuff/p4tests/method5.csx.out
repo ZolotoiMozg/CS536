@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/method5.csx.
+
+CSX program parsed correctly.
+Error (line 3): Return type of f is not void.
+Error count = 1
+
+CSX compilation halted due to type errors.

@@ -1,0 +1,19 @@
+// This is a simple CSXlite program
+{
+	int aa;
+	bool bb;
+	if (bb) { 
+		bool aaa;
+		if ( aaa ) {
+			bool aa;
+			if (aaa) {
+				bb = 0;
+			}
+		}
+	}
+	if (bb) {
+		aa=2; 
+	}
+	aa=3;
+	//AA=3;
+}

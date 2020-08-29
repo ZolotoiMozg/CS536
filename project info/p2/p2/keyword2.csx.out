@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/keyword2.csx:
+1:1 	BREAK
+End test of CSX scanner.

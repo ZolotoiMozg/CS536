@@ -1,0 +1,10 @@
+
+
+Begin CSX compilation of tests/control8.csx.
+
+CSX program parsed correctly.
+Error (line 3): The control expression of an if must be a bool.
+Error (line 3): The control expression of an if must be a scalar.
+Error count = 2
+
+CSX compilation halted due to type errors.

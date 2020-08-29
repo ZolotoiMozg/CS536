@@ -1,0 +1,10 @@
+
+
+Begin CSX compilation of tests/assign28.csx.
+
+CSX program parsed correctly.
+Error (line 4): Target of assignment can't be changed.
+Error (line 4): Right hand side of an assignment is not assignable to left hand side.
+Error count = 2
+
+CSX compilation halted due to type errors.

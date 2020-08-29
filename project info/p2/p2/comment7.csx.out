@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/comment7.csx:
+1:12 	string literal("##skjj##")
+End test of CSX scanner.

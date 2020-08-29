@@ -1,0 +1,4 @@
+Begin test of CSX scanner. Scanning file tests/blank3.csx:
+1:3 	identifier(dj)
+3:1 	integer literal(1)
+End test of CSX scanner.

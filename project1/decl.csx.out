@@ -1,0 +1,208 @@
+CSX program parsed correctly.
+Here is its unparsing:
+1:	 {
+1:	   int a0;
+1:	   int a1;
+1:	   int a2;
+1:	   int a3;
+1:	   int a4;
+1:	   int a5;
+1:	   int a6;
+1:	   int a7;
+1:	   int a8;
+1:	   int a9;
+1:	   int a10;
+1:	   int a11;
+1:	   int a12;
+1:	   int a13;
+1:	   int a14;
+1:	   int a15;
+1:	   int a16;
+1:	   int a17;
+1:	   int a18;
+1:	   int a19;
+1:	   int a20;
+1:	   int a21;
+1:	   int a22;
+1:	   int a23;
+1:	   int a24;
+1:	   int a25;
+1:	   int a26;
+1:	   int a27;
+1:	   int a28;
+1:	   int a29;
+1:	   int a30;
+1:	   int a31;
+1:	   int a32;
+1:	   int a33;
+1:	   int a34;
+1:	   int a35;
+1:	   int a36;
+1:	   int a37;
+1:	   int a38;
+1:	   int a39;
+1:	   int a40;
+1:	   int a41;
+1:	   int a42;
+1:	   int a43;
+1:	   int a44;
+1:	   int a45;
+1:	   int a46;
+1:	   int a47;
+1:	   int a48;
+1:	   int a49;
+1:	   int a50;
+1:	   int a51;
+1:	   int a52;
+1:	   int a53;
+1:	   int a54;
+1:	   int a55;
+1:	   int a56;
+1:	   int a57;
+1:	   int a58;
+1:	   int a59;
+1:	   int a60;
+1:	   int a61;
+1:	   int a62;
+1:	   int a63;
+1:	   int a64;
+1:	   int a65;
+1:	   int a66;
+1:	   int a67;
+1:	   int a68;
+1:	   int a69;
+1:	   int a70;
+1:	   int a71;
+1:	   int a72;
+1:	   int a73;
+1:	   int a74;
+1:	   int a75;
+1:	   int a76;
+1:	   int a77;
+1:	   int a78;
+1:	   int a79;
+1:	   int a80;
+1:	   int a81;
+1:	   int a82;
+1:	   int a83;
+1:	   int a84;
+1:	   int a85;
+1:	   int a86;
+1:	   int a87;
+1:	   int a88;
+1:	   int a89;
+1:	   int a90;
+1:	   int a91;
+1:	   int a92;
+1:	   int a93;
+1:	   int a94;
+1:	   int a95;
+1:	   int a96;
+1:	   int a97;
+1:	   int a98;
+1:	   int a99;
+1:	 } EOF
+
+
+Here is an analysis of identifier declarations and uses for tests/decl.csx:
+1:	a0(int)
+1:	a1(int)
+1:	a2(int)
+1:	a3(int)
+1:	a4(int)
+1:	a5(int)
+1:	a6(int)
+1:	a7(int)
+1:	a8(int)
+1:	a9(int)
+1:	a10(int)
+1:	a11(int)
+1:	a12(int)
+1:	a13(int)
+1:	a14(int)
+1:	a15(int)
+1:	a16(int)
+1:	a17(int)
+1:	a18(int)
+1:	a19(int)
+1:	a20(int)
+1:	a21(int)
+1:	a22(int)
+1:	a23(int)
+1:	a24(int)
+1:	a25(int)
+1:	a26(int)
+1:	a27(int)
+1:	a28(int)
+1:	a29(int)
+1:	a30(int)
+1:	a31(int)
+1:	a32(int)
+1:	a33(int)
+1:	a34(int)
+1:	a35(int)
+1:	a36(int)
+1:	a37(int)
+1:	a38(int)
+1:	a39(int)
+1:	a40(int)
+1:	a41(int)
+1:	a42(int)
+1:	a43(int)
+1:	a44(int)
+1:	a45(int)
+1:	a46(int)
+1:	a47(int)
+1:	a48(int)
+1:	a49(int)
+1:	a50(int)
+1:	a51(int)
+1:	a52(int)
+1:	a53(int)
+1:	a54(int)
+1:	a55(int)
+1:	a56(int)
+1:	a57(int)
+1:	a58(int)
+1:	a59(int)
+1:	a60(int)
+1:	a61(int)
+1:	a62(int)
+1:	a63(int)
+1:	a64(int)
+1:	a65(int)
+1:	a66(int)
+1:	a67(int)
+1:	a68(int)
+1:	a69(int)
+1:	a70(int)
+1:	a71(int)
+1:	a72(int)
+1:	a73(int)
+1:	a74(int)
+1:	a75(int)
+1:	a76(int)
+1:	a77(int)
+1:	a78(int)
+1:	a79(int)
+1:	a80(int)
+1:	a81(int)
+1:	a82(int)
+1:	a83(int)
+1:	a84(int)
+1:	a85(int)
+1:	a86(int)
+1:	a87(int)
+1:	a88(int)
+1:	a89(int)
+1:	a90(int)
+1:	a91(int)
+1:	a92(int)
+1:	a93(int)
+1:	a94(int)
+1:	a95(int)
+1:	a96(int)
+1:	a97(int)
+1:	a98(int)
+1:	a99(int)
+

@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/string19.csx:
+1:1 	string literal("bool")
+End test of CSX scanner.

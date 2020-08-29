@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/cast6.csx.
+
+CSX program parsed correctly.
+Error (line 5): Operand of cast must be an  integer, character or boolean.
+Error count = 1
+
+CSX compilation halted due to type errors.

@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/io3.csx.
+
+CSX program parsed correctly.
+Error (line 4): Only integers, booleans, strings, characters and character arrays may be written.
+Error count = 1
+
+CSX compilation halted due to type errors.

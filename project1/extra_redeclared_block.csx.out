@@ -1,0 +1,22 @@
+CSX program parsed correctly.
+Here is its unparsing:
+1:	 {
+2:	   int a;
+3:	   a = 0;
+4:	   if ((a != 0))
+4:	      {
+5:	         int b;
+6:	         int c;
+7:	         int b;
+8:	         c = 10;
+9:	         b = 100;
+4:	      }
+1:	 } EOF
+
+
+Here is an analysis of identifier declarations and uses for tests/extra_redeclared_block.csx:
+2:	a(int): 3,4
+5:	b(int): 9
+6:	c(int): 8
+7:	b(illegal redeclaration)
+

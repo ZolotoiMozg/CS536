@@ -1,0 +1,284 @@
+Begin test of CSX scanner. Scanning file ../../tests/t1.csx:
+1:1 	CLASS
+1:7 	identifier(test)
+1:12 	{
+5:1 	INT
+5:5 	identifier(i)
+5:7 	=
+5:9 	integer literal(0)
+5:25 	;
+6:1 	INT
+6:5 	identifier(j)
+6:7 	=
+6:9 	integer literal(-123)
+6:13 	;
+7:1 	INT
+7:5 	identifier(bigPos)
+7:12 	=
+7:14 	integer literal(11111111)
+7:22 	;
+8:1 	INT
+8:5 	identifier(bigNeg)
+8:12 	=
+8:14 	integer literal(-2222222)
+8:22 	;
+9:1 	BOOL
+9:6 	identifier(ja)
+9:9 	=
+9:11 	TRUE
+9:15 	;
+10:1 	BOOL
+10:6 	identifier(nein)
+10:11 	=
+10:13 	FALSE
+10:18 	;
+11:1 	CHAR
+11:6 	identifier(c)
+11:8 	=
+11:10 	character literal(c)
+11:13 	;
+12:1 	CHAR
+12:6 	identifier(nl)
+12:9 	=
+12:11 	character literal(\n)
+12:15 	;
+13:1 	CHAR
+13:6 	identifier(tab)
+13:10 	=
+13:12 	character literal(\t)
+13:16 	;
+14:1 	CHAR
+14:6 	identifier(bslash)
+14:13 	=
+14:15 	character literal(\)
+14:19 	;
+15:1 	CHAR
+15:6 	identifier(tic)
+15:10 	=
+15:12 	character literal(')
+15:16 	;
+16:1 	CONST
+16:7 	identifier(ten)
+16:11 	=
+16:13 	integer literal(10)
+16:15 	;
+17:1 	INT
+17:5 	identifier(ar)
+17:7 	[
+17:8 	integer literal(100)
+17:11 	]
+17:12 	;
+19:1 	VOID
+19:6 	identifier(p)
+19:7 	(
+19:8 	INT
+19:12 	identifier(j)
+19:13 	,
+19:15 	BOOL
+19:20 	identifier(bb)
+19:22 	[
+19:23 	]
+19:24 	)
+19:26 	{
+20:4 	PRINT
+20:9 	(
+20:10 	string literal("Ans = ")
+20:18 	,
+20:20 	identifier(j)
+20:21 	+
+20:22 	integer literal(1)
+20:23 	,
+20:25 	string literal("\n")
+20:29 	)
+20:30 	;
+21:1 	}
+23:1 	INT
+23:5 	identifier(f)
+23:6 	(
+23:7 	INT
+23:11 	identifier(i)
+23:12 	,
+23:13 	INT
+23:17 	identifier(j)
+23:18 	)
+23:19 	{
+24:9 	identifier(ar)
+24:11 	[
+24:12 	identifier(i)
+24:13 	]
+24:15 	=
+24:17 	integer literal(100)
+24:20 	;
+25:2 	identifier(suspend)
+25:9 	(
+25:10 	)
+25:11 	;
+26:9 	identifier(i)
+26:10 	++
+26:12 	;
+27:2 	identifier(j)
+27:3 	--
+27:5 	;
+28:2 	RETURN
+28:9 	identifier(i)
+28:10 	+
+28:11 	identifier(j)
+28:12 	;
+29:1 	}
+31:1 	VOID
+31:6 	identifier(main)
+31:10 	(
+31:11 	)
+31:12 	{
+32:2 	READ
+32:6 	(
+32:7 	identifier(b)
+32:8 	)
+32:9 	;
+34:2 	IF
+34:5 	(
+34:6 	identifier(b)
+34:8 	||
+34:11 	TRUE
+34:15 	)
+34:17 	{
+35:3 	BOOL
+35:8 	identifier(local)
+35:13 	;
+36:3 	identifier(local)
+36:9 	=
+36:11 	identifier(b)
+36:13 	&&
+36:16 	FALSE
+36:21 	;
+37:2 	}
+37:4 	ELSE
+37:9 	identifier(b)
+37:11 	=
+37:13 	!
+37:14 	(
+37:15 	identifier(b)
+37:17 	||
+37:20 	TRUE
+37:24 	)
+37:25 	;
+39:2 	identifier(L)
+39:3 	:
+39:5 	WHILE
+39:11 	(
+39:12 	!
+39:13 	(
+39:14 	identifier(i)
+39:16 	==
+39:19 	integer literal(0)
+39:20 	)
+39:21 	)
+39:23 	{
+40:3 	identifier(i)
+40:5 	=
+40:7 	identifier(i)
+40:8 	*
+40:9 	identifier(i)
+40:10 	/
+40:11 	integer literal(2)
+40:12 	;
+40:14 	BREAK
+40:20 	identifier(L)
+40:21 	;
+41:3 	identifier(i)
+41:5 	=
+41:7 	(
+41:8 	INT
+41:11 	)
+41:13 	identifier(i)
+41:14 	/
+41:15 	(
+41:16 	identifier(i)
+41:17 	-
+41:18 	integer literal(2)
+41:19 	)
+41:20 	;
+41:22 	CONTINUE
+41:31 	identifier(L)
+41:32 	;
+42:2 	}
+44:2 	IF
+44:5 	(
+44:6 	identifier(i)
+44:8 	==
+44:11 	integer literal(10)
+44:14 	||
+44:17 	identifier(i)
+44:19 	<
+44:21 	integer literal(21)
+44:24 	||
+44:27 	identifier(i)
+44:29 	>
+44:31 	integer literal(-17)
+44:35 	||
+44:38 	identifier(i)
+44:40 	!=
+44:43 	integer literal(123)
+44:46 	)
+44:48 	{
+45:3 	PRINT
+45:8 	(
+45:10 	identifier(i)
+45:11 	)
+45:12 	;
+46:3 	identifier(p)
+46:4 	(
+46:5 	integer literal(17)
+46:7 	)
+46:8 	;
+46:9 	identifier(q)
+46:10 	(
+46:11 	)
+46:12 	;
+46:14 	RETURN
+46:20 	;
+47:2 	}
+49:2 	IF
+49:5 	(
+49:6 	identifier(i)
+49:8 	>=
+49:11 	identifier(f)
+49:12 	(
+49:13 	integer literal(-3)
+49:15 	,
+49:16 	integer literal(10)
+49:18 	,
+49:19 	integer literal(20)
+49:21 	)
+49:23 	||
+49:26 	identifier(i)
+49:28 	<=
+49:31 	identifier(f)
+49:32 	(
+49:33 	identifier(i)
+49:34 	-
+49:35 	integer literal(1)
+49:36 	)
+49:37 	)
+50:3 	PRINT
+50:8 	(
+50:10 	identifier(i)
+50:11 	,
+50:13 	identifier(f)
+50:14 	(
+50:15 	identifier(i)
+50:16 	)
+50:17 	,
+50:19 	character literal(Z)
+50:22 	,
+50:24 	identifier(ar)
+50:26 	[
+50:27 	integer literal(123)
+50:30 	]
+50:31 	,
+50:33 	string literal("\n")
+50:37 	)
+50:38 	;
+52:1 	}
+53:1 	}
+End test of CSX scanner.

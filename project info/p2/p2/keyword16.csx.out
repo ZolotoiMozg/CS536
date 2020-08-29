@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/keyword16.csx:
+1:1 	WHILE
+End test of CSX scanner.

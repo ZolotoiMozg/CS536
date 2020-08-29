@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/id1.csx:
+1:1 	identifier(abc)
+End test of CSX scanner.

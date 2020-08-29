@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/while2.csx.
+
+CSX program parsed correctly.
+Error (line 5): label is already declared.
+Error count = 1
+
+CSX compilation halted due to type errors.

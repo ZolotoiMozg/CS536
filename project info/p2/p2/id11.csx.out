@@ -1,0 +1,4 @@
+Begin test of CSX scanner. Scanning file tests/id11.csx:
+1:1 	identifier(aaa)
+Illegal token (`) ignored.
+End test of CSX scanner.

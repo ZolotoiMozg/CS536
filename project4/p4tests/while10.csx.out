@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/while10.csx.
+
+CSX program parsed correctly.
+Error (line 4): label isn't a label.
+Error count = 1
+
+CSX compilation halted due to type errors.

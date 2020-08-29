@@ -1,0 +1,10 @@
+
+
+Begin CSX compilation of tests/logical8.csx.
+
+CSX program parsed correctly.
+Error (line 3): Right operand of && must be a scalar.
+Error (line 3): Right operand of && must be a bool.
+Error count = 2
+
+CSX compilation halted due to type errors.

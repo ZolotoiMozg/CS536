@@ -1,0 +1,4 @@
+Begin test of CSX scanner. Scanning file tests/comment18.csx:
+1:1 	identifier(a)
+1:7 	identifier(c)
+End test of CSX scanner.

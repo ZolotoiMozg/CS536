@@ -1,0 +1,1201 @@
+Begin test of CSX scanner. Scanning file ../../tests/t1.csx:
+1:1 	CLASS
+1:7 	identifier(test)
+1:12 	{
+5:1 	INT
+5:5 	identifier(i)
+5:7 	=
+5:9 	integer literal(0)
+5:25 	;
+6:1 	INT
+6:5 	identifier(j)
+6:7 	=
+6:9 	integer literal(-123)
+6:13 	;
+7:1 	INT
+7:5 	identifier(bigPos)
+7:12 	=
+7:14 	integer literal(11111111)
+7:22 	;
+8:1 	INT
+8:5 	identifier(bigNeg)
+8:12 	=
+8:14 	integer literal(-2222222)
+8:22 	;
+9:1 	BOOL
+9:6 	identifier(ja)
+9:9 	=
+9:11 	TRUE
+9:15 	;
+10:1 	BOOL
+10:6 	identifier(nein)
+10:11 	=
+10:13 	FALSE
+10:18 	;
+11:1 	CHAR
+11:6 	identifier(c)
+11:8 	=
+11:10 	character literal(c)
+11:13 	;
+12:1 	CHAR
+12:6 	identifier(nl)
+12:9 	=
+12:11 	character literal(\n)
+12:15 	;
+13:1 	CHAR
+13:6 	identifier(tab)
+13:10 	=
+13:12 	character literal(\t)
+13:16 	;
+14:1 	CHAR
+14:6 	identifier(bslash)
+14:13 	=
+14:15 	character literal(\)
+14:19 	;
+15:1 	CHAR
+15:6 	identifier(tic)
+15:10 	=
+15:12 	character literal(')
+15:16 	;
+16:1 	CONST
+16:7 	identifier(ten)
+16:11 	=
+16:13 	integer literal(10)
+16:15 	;
+17:1 	INT
+17:5 	identifier(ar)
+17:7 	[
+17:8 	integer literal(100)
+17:11 	]
+17:12 	;
+19:1 	VOID
+19:6 	identifier(p)
+19:7 	(
+19:8 	INT
+19:12 	identifier(j)
+19:13 	,
+19:15 	BOOL
+19:20 	identifier(bb)
+19:22 	[
+19:23 	]
+19:24 	)
+19:26 	{
+20:4 	PRINT
+20:9 	(
+20:10 	string literal("Ans = ")
+20:18 	,
+20:20 	identifier(j)
+20:21 	+
+20:22 	integer literal(1)
+20:23 	,
+20:25 	string literal("\n")
+20:29 	)
+20:30 	;
+21:1 	}
+23:1 	INT
+23:5 	identifier(f)
+23:6 	(
+23:7 	INT
+23:11 	identifier(i)
+23:12 	,
+23:13 	INT
+23:17 	identifier(j)
+23:18 	)
+23:19 	{
+24:9 	identifier(ar)
+24:11 	[
+24:12 	identifier(i)
+24:13 	]
+24:15 	=
+24:17 	integer literal(100)
+24:20 	;
+25:2 	identifier(suspend)
+25:9 	(
+25:10 	)
+25:11 	;
+26:9 	identifier(i)
+26:10 	++
+26:12 	;
+27:2 	identifier(j)
+27:3 	--
+27:5 	;
+28:2 	RETURN
+28:9 	identifier(i)
+28:10 	+
+28:11 	identifier(j)
+28:12 	;
+29:1 	}
+31:1 	VOID
+31:6 	identifier(main)
+31:10 	(
+31:11 	)
+31:12 	{
+32:2 	READ
+32:6 	(
+32:7 	identifier(b)
+32:8 	)
+32:9 	;
+34:2 	IF
+34:5 	(
+34:6 	identifier(b)
+34:8 	||
+34:11 	TRUE
+34:15 	)
+34:17 	{
+35:3 	BOOL
+35:8 	identifier(local)
+35:13 	;
+36:3 	identifier(local)
+36:9 	=
+36:11 	identifier(b)
+36:13 	&&
+36:16 	FALSE
+36:21 	;
+37:2 	}
+37:4 	ELSE
+37:9 	identifier(b)
+37:11 	=
+37:13 	!
+37:14 	(
+37:15 	identifier(b)
+37:17 	||
+37:20 	TRUE
+37:24 	)
+37:25 	;
+39:2 	identifier(L)
+39:3 	:
+39:5 	WHILE
+39:11 	(
+39:12 	!
+39:13 	(
+39:14 	identifier(i)
+39:16 	==
+39:19 	integer literal(0)
+39:20 	)
+39:21 	)
+39:23 	{
+40:3 	identifier(i)
+40:5 	=
+40:7 	identifier(i)
+40:8 	*
+40:9 	identifier(i)
+40:10 	/
+40:11 	integer literal(2)
+40:12 	;
+40:14 	BREAK
+40:20 	identifier(L)
+40:21 	;
+41:3 	identifier(i)
+41:5 	=
+41:7 	(
+41:8 	INT
+41:11 	)
+41:13 	identifier(i)
+41:14 	/
+41:15 	(
+41:16 	identifier(i)
+41:17 	-
+41:18 	integer literal(2)
+41:19 	)
+41:20 	;
+41:22 	CONTINUE
+41:31 	identifier(L)
+41:32 	;
+42:2 	}
+44:2 	IF
+44:5 	(
+44:6 	identifier(i)
+44:8 	==
+44:11 	integer literal(10)
+44:14 	||
+44:17 	identifier(i)
+44:19 	<
+44:21 	integer literal(21)
+44:24 	||
+44:27 	identifier(i)
+44:29 	>
+44:31 	integer literal(-17)
+44:35 	||
+44:38 	identifier(i)
+44:40 	!=
+44:43 	integer literal(123)
+44:46 	)
+44:48 	{
+45:3 	PRINT
+45:8 	(
+45:10 	identifier(i)
+45:11 	)
+45:12 	;
+46:3 	identifier(p)
+46:4 	(
+46:5 	integer literal(17)
+46:7 	)
+46:8 	;
+46:9 	identifier(q)
+46:10 	(
+46:11 	)
+46:12 	;
+46:14 	RETURN
+46:20 	;
+47:2 	}
+49:2 	IF
+49:5 	(
+49:6 	identifier(i)
+49:8 	>=
+49:11 	identifier(f)
+49:12 	(
+49:13 	integer literal(-3)
+49:15 	,
+49:16 	integer literal(10)
+49:18 	,
+49:19 	integer literal(20)
+49:21 	)
+49:23 	||
+49:26 	identifier(i)
+49:28 	<=
+49:31 	identifier(f)
+49:32 	(
+49:33 	identifier(i)
+49:34 	-
+49:35 	integer literal(1)
+49:36 	)
+49:37 	)
+50:3 	PRINT
+50:8 	(
+50:10 	identifier(i)
+50:11 	,
+50:13 	identifier(f)
+50:14 	(
+50:15 	identifier(i)
+50:16 	)
+50:17 	,
+50:19 	character literal(Z)
+50:22 	,
+50:24 	identifier(ar)
+50:26 	[
+50:27 	integer literal(123)
+50:30 	]
+50:31 	,
+50:33 	string literal("\n")
+50:37 	)
+50:38 	;
+52:1 	}
+53:1 	}
+Begin test of CSX scanner. Scanning file ../../tests/t2.csx:
+7:1 	CLASS
+7:7 	CLASS
+7:13 	CLASS
+7:19 	CLASS
+8:1 	BOOL
+8:6 	BOOL
+9:1 	CHAR
+9:6 	CHAR
+10:1 	INT
+10:5 	INT
+11:1 	CONST
+11:20 	CONST
+12:1 	IF
+12:9 	IF
+13:1 	ELSE
+13:6 	ELSE
+14:1 	TRUE
+14:6 	TRUE
+15:1 	FALSE
+15:7 	FALSE
+16:1 	WHILE
+16:7 	WHILE
+17:1 	CONTINUE
+17:10 	CONTINUE
+18:1 	BREAK
+18:7 	BREAK
+19:1 	READ
+19:6 	READ
+20:1 	PRINT
+20:7 	PRINT
+21:1 	RETURN
+21:8 	RETURN
+22:1 	VOID
+22:6 	VOID
+25:1 	identifier(AWord)
+25:7 	identifier(tmpLine)
+25:15 	identifier(t)
+25:17 	identifier(T)
+25:19 	identifier(t1)
+25:26 	identifier(ThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPasteThisIsAVeryLongIdentifierThatIsHopefullyGoingToBeRecognizedByTheSystemAndNotHaveProblemsCuzIfItHasProblemsThenIHaveAProblemABigProblemSoIReallyHopeThatItWorksCorrectlyTheFirstTimeAroundOtherwiseIllHaveToDebugItAndIReallyDontWantToDebugSomethingAsRediculouslyLongAsThisStringGahImGettingCloseToAReallyLongIdentifierSoIShallStopSoonBecauseMyPinkyIsGettingTiredFromPushingShiftSoOftenToTypeThisCrazyLongIdentifierWoahIJustHitCtrlDeleteToDeleteTheLastWordAndMyWholeStringWentBoyWasIScaredIdNeverWantToHaveToDoThisAgainOkayNowTheStringWillRepeatDueToCopyAndPaste)
+26:1 	identifier(strTemp)
+26:9 	identifier(more2Idents90832)
+26:26 	identifier(a)
+26:29 	identifier(f)
+26:31 	identifier(B)
+26:34 	identifier(E)
+26:37 	identifier(z)
+27:1 	identifier(ABCDEFGHIJKLMNOPQRSTUVWXYZ)
+28:1 	identifier(abcdefghijklmnopqrstuvwxyz)
+29:1 	identifier(a0123456789)
+32:1 	identifier(super)
+32:6 	!
+32:8 	integer literal(1)
+32:9 	identifier(t)
+33:1 	identifier(myCount)
+Illegal token (.) ignored.
+33:9 	identifier(temp)
+Illegal token ($) ignored.
+33:14 	identifier(var)
+Illegal token (_) ignored.
+33:19 	identifier(jie)
+Illegal token (~) ignored.
+33:23 	identifier(ji)
+Illegal token (`) ignored.
+34:1 	identifier(bni)
+Illegal token (@) ignored.
+34:5 	identifier(muiol)
+Illegal token (#) ignored.
+34:12 	identifier(ijljli)
+Illegal token (%) ignored.
+34:20 	identifier(fiid)
+Illegal token (^) ignored.
+34:26 	identifier(fiji)
+Illegal token (&) ignored.
+35:1 	identifier(ille)
+Illegal token (\) ignored.
+35:5 	identifier(gal)
+38:1 	integer literal(2342)
+Error: Integer literal 21342345623434634534 too large; replaced with 2147483647
+39:1 	integer literal(2147483647)
+Error: Integer literal ~23423423423423423433 too small; replaced with -2147483648
+40:1 	integer literal(-2147483648)
+41:1 	integer literal(1234567890)
+42:1 	integer literal(-1234567890)
+43:1 	integer literal(-1)
+44:1 	-
+44:2 	integer literal(1)
+45:1 	integer literal(1)
+46:1 	integer literal(0)
+49:1 	string literal("string literal includes: \" \n \t \\")
+50:1 	string literal("mom")
+51:1 	string literal("bool")
+52:1 	string literal("string!@#$%^&*()_+[]{}|:;';'\"")
+57:1 	character literal(a)
+57:5 	character literal(A)
+57:9 	character literal(z)
+57:13 	character literal(Z)
+57:17 	character literal(c)
+57:21 	character literal(E)
+57:25 	character literal(\n)
+57:30 	character literal(\t)
+58:1 	character literal(\)
+59:1 	character literal(')
+60:1 	character literal(")
+61:1 	character literal($)
+61:5 	character literal(^)
+61:9 	character literal(*)
+61:13 	character literal(+)
+61:17 	character literal(-)
+65:1 	(
+65:2 	)
+65:3 	[
+65:4 	]
+65:5 	=
+65:6 	;
+65:7 	+
+65:8 	-
+65:9 	*
+65:10 	/
+65:11 	==
+65:13 	!=
+65:15 	&&
+65:17 	++
+65:19 	--
+65:21 	||
+65:23 	<
+65:24 	>
+65:25 	<=
+65:27 	>=
+65:29 	,
+65:30 	!
+65:31 	{
+65:32 	}
+65:33 	:
+66:1 	==
+66:3 	==
+66:5 	=
+73:4 	identifier(testvar)
+Illegal token (') ignored.
+Illegal token (\) ignored.
+Illegal token (') ignored.
+Illegal token (') ignored.
+Illegal token (\) ignored.
+86:1 	identifier(d)
+Illegal token (') ignored.
+Illegal token (') ignored.
+87:1 	identifier(dd)
+Illegal token (') ignored.
+Illegal token (") ignored.
+90:5 	identifier(strings)
+90:13 	identifier(don)
+Illegal token (') ignored.
+90:16 	identifier(t)
+90:18 	identifier(include)
+Illegal token (\) ignored.
+90:27 	identifier(a)
+90:29 	identifier(single)
+90:36 	identifier(slash)
+Illegal token (") ignored.
+Illegal token (") ignored.
+Illegal token (\) ignored.
+91:5 	integer literal(12)
+91:8 	identifier(jivasdf)
+Illegal token (") ignored.
+Illegal token (") ignored.
+94:1 	identifier(this)
+94:6 	identifier(is)
+94:9 	identifier(not)
+94:13 	identifier(a)
+94:15 	identifier(continuation)
+94:28 	string literal("const")
+Begin test of CSX scanner. Scanning file ../../tests/t3.csx:
+7:1 	CONST
+7:7 	INT
+7:11 	identifier(SIZE)
+7:16 	=
+7:18 	integer literal(100)
+7:21 	;
+9:1 	CLASS
+9:7 	identifier(ExhaustiveTest)
+9:21 	{
+10:2 	INT
+10:6 	identifier(value)
+10:11 	;
+11:2 	CHAR
+11:7 	identifier(signal)
+11:13 	;
+12:2 	CHAR
+12:7 	identifier(name)
+12:11 	[
+12:12 	identifier(SIZE)
+12:16 	]
+12:17 	;
+13:2 	BOOL
+13:7 	identifier(status)
+13:13 	;
+15:2 	identifier(ExhaustiveTest)
+15:16 	(
+15:17 	)
+16:2 	{
+17:3 	INT
+17:7 	identifier(i)
+17:8 	=
+17:9 	integer literal(0)
+17:10 	;
+18:3 	INT
+18:7 	identifier(negVal)
+18:14 	=
+18:41 	integer literal(-654)
+18:45 	;
+19:3 	INT
+19:7 	identifier(posVal)
+19:14 	=
+19:30 	integer literal(4234)
+19:34 	;
+20:3 	INT
+20:7 	identifier(hugePosVal)
+20:18 	=
+Error: Integer literal 123123123123123123123123123123123123123123123 too large; replaced with 2147483647
+20:20 	integer literal(2147483647)
+20:65 	;
+21:3 	INT
+21:7 	identifier(hugeNegVal)
+21:18 	=
+Error: Integer literal ~12312312315412412315124151231251561231512511 too small; replaced with -2147483648
+21:20 	integer literal(-2147483648)
+21:65 	;
+23:3 	WHILE
+23:8 	(
+23:9 	identifier(i)
+23:10 	!=
+23:12 	identifier(SIZE)
+23:16 	)
+24:3 	{
+25:4 	IF
+25:6 	(
+25:7 	identifier(i)
+25:8 	==
+25:10 	integer literal(20)
+25:12 	)
+25:13 	;
+26:5 	PRINT
+26:10 	(
+26:11 	string literal("\ti = %d\n")
+26:23 	,
+26:24 	integer literal(20)
+26:26 	)
+26:27 	;
+27:4 	ELSE
+27:9 	IF
+27:11 	(
+27:12 	identifier(i)
+27:13 	>
+27:14 	integer literal(20)
+27:16 	)
+28:5 	PRINT
+28:10 	(
+28:11 	string literal("\ti > 20\n")
+28:23 	)
+28:24 	;
+29:4 	ELSE
+29:9 	IF
+29:11 	(
+29:12 	identifier(i)
+29:13 	<
+29:14 	integer literal(20)
+29:16 	)
+30:5 	PRINT
+30:10 	(
+30:11 	string literal("\ti<20\n")
+30:21 	)
+30:22 	;
+31:4 	ELSE
+31:9 	IF
+31:11 	(
+31:12 	identifier(i)
+31:13 	>=
+31:15 	integer literal(20)
+31:17 	)
+32:5 	PRINT
+32:10 	(
+32:11 	string literal("\ti>=20\n")
+32:22 	)
+32:23 	;
+33:4 	ELSE
+33:9 	IF
+33:11 	(
+33:12 	identifier(i)
+33:13 	<=
+33:15 	integer literal(20)
+33:17 	)
+34:5 	PRINT
+34:10 	(
+34:11 	string literal("\ti<=20\n")
+34:22 	)
+34:23 	;
+35:4 	ELSE
+36:5 	PRINT
+36:10 	(
+36:11 	string literal("\ti!=20\n")
+36:22 	)
+36:23 	;
+38:4 	identifier(signal)
+38:11 	=
+38:13 	character literal(\n)
+38:17 	;
+39:4 	identifier(signal)
+39:11 	=
+39:13 	character literal(\t)
+39:17 	;
+40:4 	identifier(signal)
+40:11 	=
+40:13 	character literal(')
+40:17 	;
+41:4 	identifier(signal)
+41:11 	=
+41:13 	character literal(\)
+41:17 	;
+42:4 	identifier(signal)
+42:11 	=
+42:13 	character literal(a)
+42:16 	;
+43:4 	identifier(signal)
+43:11 	=
+Illegal token (') ignored.
+43:13 	identifier(aa)
+Illegal token (') ignored.
+43:15 	;
+44:4 	identifier(status)
+44:11 	=
+44:13 	FALSE
+44:18 	;
+45:4 	IF
+45:6 	(
+45:7 	identifier(i)
+45:8 	==
+45:10 	integer literal(50)
+45:12 	)
+46:5 	CONTINUE
+46:13 	;
+47:4 	IF
+47:6 	(
+47:7 	identifier(i)
+47:8 	==
+47:10 	integer literal(90)
+47:12 	)
+48:5 	BREAK
+48:10 	;
+50:4 	identifier(j)
+50:6 	=
+50:8 	READ
+50:12 	(
+50:13 	identifier(name)
+50:17 	[
+50:18 	identifier(i)
+50:19 	]
+50:20 	)
+50:21 	;
+51:4 	IF
+51:6 	(
+51:7 	identifier(j)
+51:8 	!=
+51:10 	integer literal(0)
+51:11 	)
+52:5 	PRINT
+52:10 	(
+52:11 	string literal("Read Error")
+52:23 	)
+52:24 	;
+54:4 	IF
+54:6 	(
+54:7 	identifier(j)
+54:8 	==
+54:10 	integer literal(2)
+54:11 	||
+54:13 	identifier(i)
+54:14 	==
+54:16 	integer literal(4)
+54:17 	)
+55:5 	identifier(a)
+55:7 	=
+55:9 	integer literal(1)
+55:10 	:
+55:11 	integer literal(4)
+55:12 	;
+57:4 	identifier(i)
+57:5 	=
+57:6 	identifier(i)
+57:7 	+
+57:8 	integer literal(1)
+57:9 	;
+58:4 	identifier(j)
+58:5 	=
+58:6 	identifier(j)
+58:7 	-
+58:8 	integer literal(1)
+58:9 	;
+59:4 	identifier(i)
+59:5 	++
+59:7 	;
+60:4 	identifier(j)
+60:5 	--
+60:7 	;
+61:4 	INT
+61:8 	identifier(f)
+61:10 	=
+61:12 	identifier(i)
+61:13 	*
+61:14 	identifier(j)
+61:15 	;
+62:4 	INT
+62:8 	identifier(g)
+62:10 	=
+62:12 	identifier(i)
+62:13 	/
+62:14 	identifier(j)
+62:15 	;
+64:4 	IF
+64:6 	(
+64:7 	identifier(f)
+64:8 	==
+64:10 	integer literal(0)
+64:11 	&&
+64:13 	identifier(g)
+64:14 	==
+64:16 	integer literal(1)
+64:17 	)
+65:5 	INT
+65:9 	identifier(c)
+65:11 	=
+65:13 	integer literal(1)
+65:14 	;
+67:4 	identifier(name)
+67:9 	=
+67:11 	string literal("A             i\n")
+67:30 	;
+68:4 	PRINT
+68:9 	(
+68:10 	identifier(name)
+68:14 	)
+68:15 	;
+70:4 	identifier(name)
+70:9 	=
+Illegal token (") ignored.
+70:11 	identifier(A)
+Illegal token (") ignored.
+71:4 	;
+Illegal token (\) ignored.
+Illegal token (@) ignored.
+Illegal token (#) ignored.
+Illegal token (%) ignored.
+Illegal token (^) ignored.
+Illegal token (&) ignored.
+Illegal token (?) ignored.
+Illegal token (|) ignored.
+89:3 	}
+90:3 	identifier(status)
+90:10 	=
+90:12 	TRUE
+90:16 	;
+92:2 	}
+93:2 	CONST
+93:8 	INT
+93:12 	identifier(GetValue)
+93:20 	(
+93:21 	)
+94:2 	{
+95:3 	RETURN
+95:10 	identifier(value)
+95:15 	;
+96:2 	}
+97:2 	VOID
+97:7 	identifier(SetValue)
+97:15 	(
+97:16 	INT
+97:20 	identifier(val)
+97:23 	)
+98:2 	{
+99:3 	IF
+99:5 	(
+99:6 	identifier(val)
+99:9 	>
+99:10 	identifier(SIZE)
+99:14 	)
+99:15 	;
+100:4 	identifier(value)
+100:10 	=
+100:12 	identifier(SIZE)
+100:16 	;
+101:3 	ELSE
+101:8 	IF
+101:10 	(
+101:11 	identifier(val)
+101:14 	<
+101:15 	integer literal(0)
+101:16 	)
+102:4 	identifier(value)
+102:10 	=
+102:12 	integer literal(0)
+102:13 	;
+103:3 	ELSE
+104:4 	identifier(value)
+104:10 	=
+104:12 	identifier(val)
+104:15 	;
+105:2 	}
+106:1 	}
+Begin test of CSX scanner. Scanning file ../../tests/t4.csx:
+1:1 	identifier(P2)
+1:4 	BOOL
+Illegal token (') ignored.
+Illegal token (\) ignored.
+Illegal token (') ignored.
+2:1 	BREAK
+3:1 	CHAR
+Illegal token (_) ignored.
+3:5 	WHILE
+4:1 	CLASS
+5:1 	CONST
+6:1 	CONTINUE
+7:1 	ELSE
+9:1 	FALSE
+10:1 	INT
+10:4 	/
+10:5 	READ
+11:1 	RETURN
+11:8 	RETURN
+15:20 	PRINT
+16:1 	PRINT
+17:1 	VOID
+Error: Integer literal 4343434343 too large; replaced with 2147483647
+17:6 	integer literal(2147483647)
+18:1 	identifier(helloWorld)
+19:1 	WHILE
+20:1 	integer literal(45)
+Illegal token (_) ignored.
+20:3 	:
+21:1 	integer literal(-456)
+22:1 	character literal(d)
+22:4 	character literal(\t)
+23:1 	character literal(\)
+24:1 	TRUE
+Illegal token (') ignored.
+Illegal token (') ignored.
+Illegal token (') ignored.
+26:1 	character literal(')
+26:5 	IF
+Illegal token (') ignored.
+26:7 	character literal(\n)
+Error: Integer literal ~59698409540 too small; replaced with -2147483648
+26:11 	integer literal(-2147483648)
+Illegal token (') ignored.
+Illegal token (\) ignored.
+Illegal token (') ignored.
+27:1 	+
+27:2 	=
+27:3 	;
+27:4 	[
+27:5 	]
+27:6 	(
+27:7 	)
+27:8 	-
+27:9 	*
+27:10 	/
+27:11 	<
+27:12 	>
+27:13 	<=
+27:15 	>=
+27:17 	,
+27:18 	!
+27:19 	{
+27:20 	}
+27:21 	:
+27:22 	!=
+27:24 	==
+27:26 	&&
+27:28 	||
+27:30 	integer literal(5)
+Error: Integer literal 9698409540 too large; replaced with 2147483647
+27:46 	integer literal(2147483647)
+27:56 	character literal(o)
+28:1 	string literal("434545")
+28:9 	identifier(abc)
+Illegal token (") ignored.
+29:1 	identifier(ADADAFD)
+30:1 	string literal("FAF### testing ##DA")
+31:15 	string literal("A")
+33:1 	identifier(file)
+Illegal token (_) ignored.
+33:5 	identifier(test)
+33:13 	identifier(d)
+Illegal token (#) ignored.
+39:8 	READ
+39:13 	identifier(this)
+39:18 	string literal("line")
+Illegal token (') ignored.
+39:24 	identifier(li)
+Illegal token (') ignored.
+39:26 	string literal("\n\t")
+39:32 	:
+40:1 	integer literal(9)
+40:2 	identifier(ereefe)
+40:9 	identifier(e9reefe)
+40:16 	string literal("a\n\tb")
+40:24 	string literal("\"hi\"")
+40:32 	;
+40:33 	integer literal(5)
+40:34 	identifier(f)
+Illegal token (_) ignored.
+40:35 	identifier(je)
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+43:1 	identifier(a)
+Illegal token (") ignored.
+Illegal token (\) ignored.
+Illegal token (") ignored.
+45:1 	string literal("\\")
+Illegal token (") ignored.
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+Illegal token (") ignored.
+47:1 	string literal("\\\ta\n\\")
+48:1 	string literal("\\\ta\n'\"")
+48:13 	;
+Begin test of CSX scanner. Scanning file ../../tests/t5.csx:
+1:1 	BOOL
+1:6 	+
+1:8 	integer literal(150999934)
+1:17 	integer literal(-30485058)
+1:26 	/
+1:27 	integer literal(0)
+1:29 	*
+1:30 	integer literal(-1000000)
+1:38 	+
+1:39 	integer literal(7)
+2:1 	BREAK
+3:1 	CHAR
+3:6 	identifier(val)
+3:10 	=
+Illegal token (') ignored.
+Illegal token (\) ignored.
+3:13 	integer literal(41)
+Illegal token (') ignored.
+4:1 	CONST
+5:3 	BOOL
+5:8 	integer literal(7)
+Illegal token (_) ignored.
+5:11 	identifier(james)
+5:17 	=
+6:1 	FALSE
+9:1 	CLASS
+9:6 	:
+11:1 	identifier(runaway)
+11:9 	identifier(comment)
+Illegal token (.) ignored.
+Illegal token (.) ignored.
+Illegal token (.) ignored.
+12:2 	WHILE
+12:7 	(
+12:9 	TRUE
+Illegal token (`) ignored.
+15:44 	)
+15:46 	{
+16:3 	IF
+16:5 	:
+16:7 	identifier(a)
+16:9 	&&
+16:12 	identifier(b)
+17:4 	CONTINUE
+18:3 	ELSE
+19:1 	READ
+19:5 	{
+Illegal token (_) ignored.
+19:6 	identifier(from)
+Illegal token (_) ignored.
+19:10 	identifier(FILE)
+19:14 	}
+19:15 	:
+20:2 	integer literal(3)
+20:3 	identifier(disks)
+Illegal token (@) ignored.
+20:10 	identifier(server)
+21:5 	BREAK
+22:1 	}
+24:1 	RETURN
+25:1 	PRINT
+25:7 	*
+25:9 	character literal(')
+25:14 	+
+Illegal token (&) ignored.
+25:16 	identifier(array)
+25:22 	;
+25:23 	/
+37:1 	identifier(public)
+37:8 	VOID
+37:13 	identifier(method)
+Illegal token (_) ignored.
+37:19 	identifier(name)
+37:23 	(
+37:25 	)
+37:26 	[
+37:41 	identifier(many)
+Illegal token (#) ignored.
+37:47 	identifier(s)
+37:48 	,
+38:2 	identifier(a)
+38:3 	||
+38:5 	identifier(b)
+38:6 	!=
+38:8 	identifier(c)
+38:9 	+
+Illegal token (~) ignored.
+Error: Integer literal 2399999999999999999999999999999999999999999999 too large; replaced with 2147483647
+38:11 	integer literal(2147483647)
+38:57 	/
+38:58 	integer literal(10)
+Illegal token (.) ignored.
+38:60 	integer literal(0)
+39:2 	!
+39:3 	FALSE
+40:2 	PRINT
+40:7 	string literal("\nothing")
+40:18 	<
+40:20 	identifier(a)
+40:22 	>
+40:24 	identifier(b01c2)
+41:2 	CONTINUE
+41:11 	identifier(a)
+41:12 	==
+41:14 	identifier(b)
+Illegal token (?) ignored.
+41:15 	identifier(a)
+41:16 	/
+41:17 	identifier(b)
+41:18 	:
+41:19 	identifier(a)
+41:20 	-
+41:21 	identifier(b)
+41:22 	;
+42:1 	]
+48:1 	identifier(DOUBLE)
+48:8 	identifier(bound)
+48:13 	=
+Error: Integer literal ~10000000000000000000000000000000000000000000000 too small; replaced with -2147483648
+48:15 	integer literal(-2147483648)
+48:63 	;
+49:1 	INT
+49:5 	identifier(MAX)
+49:9 	=
+49:11 	identifier(a)
+49:15 	[
+49:16 	integer literal(0)
+49:20 	]
+49:23 	;
+50:1 	identifier(for)
+50:4 	(
+50:6 	INT
+50:10 	identifier(counter)
+50:22 	=
+50:23 	integer literal(0)
+50:24 	;
+50:25 	identifier(counter)
+50:32 	>
+50:33 	identifier(bound)
+50:38 	;
+56:3 	identifier(counter)
+56:10 	--
+56:12 	)
+56:15 	{
+57:7 	IF
+57:10 	(
+57:11 	identifier(max)
+57:14 	<
+57:15 	identifier(a)
+57:16 	[
+57:19 	(
+57:20 	identifier(counter)
+57:28 	*
+57:30 	identifier(b)
+57:32 	)
+57:33 	/
+57:34 	identifier(c)
+57:35 	+
+57:38 	identifier(d)
+Illegal token (%) ignored.
+57:39 	identifier(e)
+57:40 	]
+57:41 	)
+58:1 	identifier(max)
+58:4 	=
+58:5 	identifier(a)
+58:6 	[
+58:9 	(
+58:10 	identifier(counter)
+58:18 	*
+58:20 	identifier(b)
+58:22 	)
+58:23 	/
+58:24 	identifier(c)
+58:25 	+
+58:28 	identifier(d)
+Illegal token (%) ignored.
+58:29 	identifier(e)
+58:30 	]
+58:32 	;
+59:1 	}
+65:1 	identifier(string)
+65:8 	identifier(str0)
+65:12 	=
+Illegal token (") ignored.
+Illegal token (\) ignored.
+65:16 	integer literal(33)
+65:19 	identifier(unprintable)
+65:30 	string literal("+ ")
+Illegal token (\) ignored.
+65:34 	identifier(ttext)
+Illegal token (\) ignored.
+65:39 	identifier(n)
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+65:40 	identifier(more)
+65:45 	identifier(text)
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+65:49 	string literal("")
+Illegal token (") ignored.
+65:52 	;
+67:1 	identifier(smiley)
+67:7 	:
+67:10 	string literal("<^0^>")
+68:1 	identifier(pray)
+68:6 	=
+68:8 	string literal("(u_u)o//")
+69:1 	identifier(surprised)
+69:11 	--
+69:13 	-
+69:14 	>
+69:16 	(
+69:17 	>
+Illegal token (_) ignored.
+69:18 	<
+69:19 	)
+70:1 	identifier(sleepy)
+70:7 	||
+70:9 	(
+70:10 	+
+Illegal token (_) ignored.
+70:11 	+
+70:12 	)
+71:1 	identifier(irritated)
+71:11 	=
+71:12 	string literal(" (-")
+71:17 	-
+71:18 	;
+71:19 	)
+Illegal token (") ignored.
+72:1 	identifier(lucky)
+72:6 	==
+72:8 	(
+Illegal token (^) ignored.
+72:9 	-
+Illegal token (^) ignored.
+72:10 	)
+72:11 	identifier(v)
+78:1 	identifier(veryLongStringForTheStressTest)
+78:31 	!=
+78:33 	string literal("\t\t\"Hollingsworth-Richards wins bronze\"\n\nMellisa Hollingsworth-Richards refused to let a difficult, technical track throw her. She managed to stay in the saddle and hung on for a bronze medal in women's skeleton at the Winter Olympic Games on Thursday.\nWhen Hollingsworth-Richards' husband Billy rides a bronc in the rodeo, he has to hang on for just eight seconds. Sitting in second place, with two sledders to go, Hollingsworth-Richards had to wait several minutes to see if someone would make a mistake.\n\"I went through a wide range of emotions,\" said the Eckville, Alta., native, who is the first Canadian to win an Olympic skeleton medal. \"I knew I'd lost my spot and knew I had to sit and wait. It was a little bit of heartbreak and two minutes later I was on top of the world again.\"\nHollingsworth-Richards' time of two minutes 1.41 seconds left her clinging to a podium position with two sliders to go.\n\nIf both German Diana Sartor or gold-medal favourite Maya Pedersen of Switzerland posted faster times, Hollingsworth-Richards would finish out of the medals. But Sartor made a couple of errors and when her time flashed on the screen, Hollingsworth-Richards leaped for joy, knowing she had clinched a medal.\n\"I honestly thought it was over,\" she said. \"When I saw that time come up, I was happy for myself but I feel terrible for Diana. That's the thing about sport. You're never, ever wanting anybody to make mistakes to give you an advantage. Maybe that's where luck comes in.\"\nPedersen won the gold in 1:59.83, reaching a top speed of 123.1 km/h an hour to edge out Britain's Shelley Rudman, who claimed silver at 2:01.06.\nSartor, who is nine weeks pregnant, finished fourth in 2:01.69.\n\"I am so relieved, so happy,\" said Hollingsworth-Richards, who dominated the World Cup circuit this year by posting top-three finishes in all seven races, including three victories, and easily taking the overall points title. \"It was a tough day. I didn't have the perfect runs I was planning on having.\"Lindsay Alcock of Calgary was 10th in 2:02.85.\n\"I'm capable of better,\" said Alcock, who made a couple of mistakes on her first of two runs.\n\"To come back on the second run and put down what I felt I was capable of doing, that's the sign of an athlete that can still come out and do something.\"\nSkeleton racers throw themselves head-first down an ice freeway. They reach speeds that would break the limits on most highways, with only a thin sled separating them from the track.\nThe difference between luge and skeleton is luge riders go feet first.\n\"We have mutual respect for each other,\" said Alcock. \"I don't believe there is any particular rivalry.\"\n\"I would admit luge is more dangerous than what we do. Their sleds are more prone to tipping over than ours.\"\nHollingsworth-Richards and Pedersen were among the favourites coming into the race.\nPedersen, a two-time world champion, finished fifth at the Salt Lake City Games four years ago despite having the fastest time in the second run. She thought about retiring, but the 33-year-old decided to stick around for another shot at gold.\nShe skipped the 2003-04 World Cup season because she was pregnant, but after giving birth to her daughter Miriam she came back to finish second in the world the next year. And in 2005, she won the world championship.\n\"I missed sliding,\" said Pedersen. \"I missed skeleton and I wanted to get back. I wasn't happy with my fifth place and I wanted to try again in Torino.\"\nRudman scored Britain's first medal of the Torino Games in a sport she took up four years ago.\n\"I'm hoping this puts skeleton on the map in the U.K.,\" said Rudman.\nHollingsworth-Richards said she was nervous all week and had trouble breathing.\n\"That's always been one of my things, take deep breaths and stay relaxed,\" she said with a grin. \"I'm relieved I can breathe again.\"")
+78:3937 	;
+Illegal token (#) ignored.
+84:1 	identifier(I)
+84:3 	identifier(should)
+84:10 	identifier(test)
+84:18 	CHAR
+84:23 	identifier(literals)
+84:33 	identifier(also)
+88:1 	CHAR
+88:6 	integer literal(0)
+88:7 	identifier(charVal)
+88:15 	:
+88:16 	=
+88:18 	character literal(a)
+88:21 	;
+Illegal token (') ignored.
+Illegal token (\) ignored.
+89:18 	integer literal(40)
+Illegal token (') ignored.
+Illegal token (') ignored.
+Illegal token (\) ignored.
+90:1 	integer literal(45)
+Illegal token (') ignored.
+Illegal token (') ignored.
+Illegal token (') ignored.
+Illegal token (') ignored.
+Illegal token (') ignored.
+Illegal token (\) ignored.
+Illegal token (') ignored.
+92:3 	character literal(\n)
+92:7 	character literal(\t)
+92:12 	character literal(\)
+92:17 	character literal(/)
+92:25 	character literal(@)
+92:29 	character literal(%)
+92:32 	character literal(^)
+Illegal token (') ignored.
+93:1 	identifier(ab)
+Illegal token (') ignored.
+Illegal token (') ignored.
+Illegal token (\) ignored.
+94:1 	/
+Illegal token (') ignored.
+

@@ -1,0 +1,4 @@
+Begin test of CSX scanner. Scanning file tests/id5.csx:
+1:1 	integer literal(8)
+1:2 	identifier(abc)
+End test of CSX scanner.

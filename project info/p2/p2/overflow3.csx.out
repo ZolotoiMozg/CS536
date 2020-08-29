@@ -1,0 +1,4 @@
+Begin test of CSX scanner. Scanning file tests/overflow3.csx:
+Error: Integer literal 2147483648 too large; replaced with 2147483647
+1:1 	integer literal(2147483647)
+End test of CSX scanner.

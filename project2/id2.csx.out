@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/id2.csx:
+1:1 	identifier(ZAT3xl7)
+End test of CSX scanner.

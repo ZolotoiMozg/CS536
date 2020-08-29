@@ -1,0 +1,10 @@
+
+
+Begin CSX compilation of tests/scope22.csx.
+
+CSX program parsed correctly.
+Error (line 2): x is already declared.
+Error (line 2): The last method in a class must be declared as void main() {...
+Error count = 2
+
+CSX compilation halted due to type errors.

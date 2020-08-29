@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/keyword15.csx:
+1:1 	VOID
+End test of CSX scanner.

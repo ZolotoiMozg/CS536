@@ -1,0 +1,4 @@
+Begin test of CSX scanner. Scanning file tests/misc35.csx:
+Illegal token (#) ignored.
+Illegal token (#) ignored.
+End test of CSX scanner.

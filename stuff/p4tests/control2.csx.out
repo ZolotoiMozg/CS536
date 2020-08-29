@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/control2.csx.
+
+CSX program parsed correctly.
+Error (line 3): The control expression of a while loop must be a bool.
+Error count = 1
+
+CSX compilation halted due to type errors.

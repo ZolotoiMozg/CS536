@@ -1,0 +1,123 @@
+Begin test of CSX scanner. Scanning file ../../tests/t4.csx:
+1:1 	identifier(P2)
+1:4 	BOOL
+Illegal token (') ignored.
+Illegal token (\) ignored.
+Illegal token (') ignored.
+2:1 	BREAK
+3:1 	CHAR
+Illegal token (_) ignored.
+3:5 	WHILE
+4:1 	CLASS
+5:1 	CONST
+6:1 	CONTINUE
+7:1 	ELSE
+9:1 	FALSE
+10:1 	INT
+10:4 	/
+10:5 	READ
+11:1 	RETURN
+11:8 	RETURN
+15:20 	PRINT
+16:1 	PRINT
+17:1 	VOID
+Error: Integer literal 4343434343 too large; replaced with 2147483647
+17:6 	integer literal(2147483647)
+18:1 	identifier(helloWorld)
+19:1 	WHILE
+20:1 	integer literal(45)
+Illegal token (_) ignored.
+20:3 	:
+21:1 	integer literal(-456)
+22:1 	character literal(d)
+22:4 	character literal(\t)
+23:1 	character literal(\)
+24:1 	TRUE
+Illegal token (') ignored.
+Illegal token (') ignored.
+Illegal token (') ignored.
+26:1 	character literal(')
+26:5 	IF
+Illegal token (') ignored.
+26:7 	character literal(\n)
+Error: Integer literal ~59698409540 too small; replaced with -2147483648
+26:11 	integer literal(-2147483648)
+Illegal token (') ignored.
+Illegal token (\) ignored.
+Illegal token (') ignored.
+27:1 	+
+27:2 	=
+27:3 	;
+27:4 	[
+27:5 	]
+27:6 	(
+27:7 	)
+27:8 	-
+27:9 	*
+27:10 	/
+27:11 	<
+27:12 	>
+27:13 	<=
+27:15 	>=
+27:17 	,
+27:18 	!
+27:19 	{
+27:20 	}
+27:21 	:
+27:22 	!=
+27:24 	==
+27:26 	&&
+27:28 	||
+27:30 	integer literal(5)
+Error: Integer literal 9698409540 too large; replaced with 2147483647
+27:46 	integer literal(2147483647)
+27:56 	character literal(o)
+28:1 	string literal("434545")
+28:9 	identifier(abc)
+Illegal token (") ignored.
+29:1 	identifier(ADADAFD)
+30:1 	string literal("FAF### testing ##DA")
+31:15 	string literal("A")
+33:1 	identifier(file)
+Illegal token (_) ignored.
+33:5 	identifier(test)
+33:13 	identifier(d)
+Illegal token (#) ignored.
+39:8 	READ
+39:13 	identifier(this)
+39:18 	string literal("line")
+Illegal token (') ignored.
+39:24 	identifier(li)
+Illegal token (') ignored.
+39:26 	string literal("\n\t")
+39:32 	:
+40:1 	integer literal(9)
+40:2 	identifier(ereefe)
+40:9 	identifier(e9reefe)
+40:16 	string literal("a\n\tb")
+40:24 	string literal("\"hi\"")
+40:32 	;
+40:33 	integer literal(5)
+40:34 	identifier(f)
+Illegal token (_) ignored.
+40:35 	identifier(je)
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+43:1 	identifier(a)
+Illegal token (") ignored.
+Illegal token (\) ignored.
+Illegal token (") ignored.
+45:1 	string literal("\\")
+Illegal token (") ignored.
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+Illegal token (\) ignored.
+Illegal token (") ignored.
+47:1 	string literal("\\\ta\n\\")
+48:1 	string literal("\\\ta\n'\"")
+48:13 	;
+End test of CSX scanner.

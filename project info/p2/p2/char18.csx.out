@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/char18.csx:
+1:1 	character literal(%)
+End test of CSX scanner.

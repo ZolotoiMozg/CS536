@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/string14.csx:
+1:1 	string literal("slkjal 238x \" eiji3 \\\\\t wklejlkcs \n.. ")
+End test of CSX scanner.

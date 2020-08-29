@@ -1,0 +1,19 @@
+CSX program parsed correctly.
+Here is its unparsing:
+1:	 {
+2:	   bool var1;
+3:	   int var2;
+4:	   int var3;
+5:	   var2 = 0;
+6:	   var3 = (var2 + 1);
+7:	   var1 = (var3 == 1);
+8:	   if (var1)
+8:	      var2 = (var2 - (var3 + var3));
+1:	 } EOF
+
+
+Here is an analysis of identifier declarations and uses for tests/simple.csx:
+2:	var1(bool): 7,8
+3:	var2(int): 5,6,8(2)
+4:	var3(int): 6,7,8(2)
+

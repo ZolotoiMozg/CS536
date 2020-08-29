@@ -1,0 +1,9 @@
+
+
+Begin CSX compilation of tests/relation7.csx.
+
+CSX program parsed correctly.
+Error (line 3): Operands of <= must both be arithmetic or both must be boolean.
+Error count = 1
+
+CSX compilation halted due to type errors.

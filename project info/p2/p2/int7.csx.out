@@ -1,0 +1,5 @@
+Begin test of CSX scanner. Scanning file tests/int7.csx:
+1:1 	integer literal(100)
+Illegal token (.) ignored.
+1:4 	integer literal(2)
+End test of CSX scanner.

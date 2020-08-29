@@ -1,0 +1,3 @@
+Begin test of CSX scanner. Scanning file tests/char2.csx:
+1:1 	character literal(a)
+End test of CSX scanner.
